@@ -119,5 +119,8 @@ public class CatSc {
 		}
 		return list;
 	}
+	public void test111(){
+		System.out.println("新增方法");
+	}
 
 }
