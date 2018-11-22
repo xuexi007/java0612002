@@ -1,0 +1,11 @@
+CREATE TABLE `sc` (
+  `id` int(14) NOT NULL AUTO_INCREMENT,
+  `name` varchar(100) DEFAULT NULL,
+  `lowprice` float(10,2) DEFAULT NULL,
+  `avgprice` float(10,2) DEFAULT NULL,
+  `hprice` float(10,2) DEFAULT NULL,
+  `guige` varchar(12) DEFAULT NULL,
+  `unit` varchar(12) DEFAULT NULL,
+  `createdate` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+)

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.offcn.dao.ScDao">
+<insert id="save" parameterType="com.offcn.po.Sc">
+  insert into sc(name,lowprice,avgprice,hprice,guige,unit,createdate) values(#{name},#{lowprice},#{avgprice},#{hprice},#{guige},#{unit},#{createdate})
+</insert>
+    <select id="getScByBeginEndTime" resultType="com.offcn.po.Sc">
+        SELECT * FROM sc where createdate &gt;#{begindate} and createdate &lt;#{enddate} order by createdate asc
+    </select>
+</mapper>
